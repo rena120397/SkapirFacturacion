@@ -1,0 +1,245 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body{font-family: 'Poppins', sans-serif;
+     background: #fafafa}
+
+.titulo{
+	color: white;
+	text-align: center;
+}
+a,
+a:hover,
+a:focus{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.navbar{
+	background: #536976;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right,#536976, #292E49 );  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #536976,#292E49 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	border: none;
+	border-radius: 0.5;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+	height: 5rem;
+}
+
+.navbar-btn{
+	box-shadow: none;
+	outline: none!important;
+	border: none;
+}
+
+.line{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+   background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+
+#sidebar .sidebar-header{
+	padding: 20px;
+	background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#sidebar ul.components{
+	padding: 20px 0px;
+	border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+   background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #536976;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download{
+	background: #fff;
+	color: #7386D5;
+}
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+@media(max-width:768px){
+	#sidebar{margin-left: -250px;}
+	#sidebar.active{
+		margin-left: 0px;
+	}
+	#sidebarCollapse span{
+		display: none;
+	}
+}
+.skap{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+	transition: transform 1s ease-out;
+	display: inline;
+}
+.skap:hover{
+    transform: rotate(360deg);
+}
+h3{
+	display: inline;
+}
+.footer{
+	background: #536976;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+	padding-top: 25px;
+	color: white;
+	height: 4rem;
+}
+.pad{
+	padding-left: 20px;
+	text-align: center;
+}
+.containerr{
+	padding-left: 20px;
+}
+
+/* LETRAS DEL MENU */ 
+.letramenu{
+	padding-left: 3.5rem;
+}
+.letramen{
+	padding-left: 2.1rem;
+}
+.letrame{
+	padding-left: 1.2rem;
+}
+.letram{
+	padding-left: 3rem;
+}
+.letra{
+	padding-left: 1rem;
+}
+/* TERMINA */ 
+
+/* formularios ventas*/
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd ;
+    padding: 0 1.4em 1.4em 1.4em ;
+    margin: 0 0 1.5em 0 ;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em ;
+    font-weight: bold ;
+	text-align: left;
+	width:inherit; 
+    padding:0 10px; 
+    border-bottom:none;
+}
+.l15{
+	font-size: 20px;
+}
+/* div de venta */
+.mostrar{
+	border: #000 1px;
+	background-color: #47748b;
+	padding: 10px;
+	padding-right: 40x;
+	margin-bottom: 10px;
+	font-size: 35px;
+}
+.most{
+	border: #000 1px;
+	background-color: #7386D5;
+	padding: 10px;
+	padding-right: 40x;
+	margin-bottom: 10px;
+	font-size: 35px;
+}
+
+
+
+
+
+
+/*termina*/

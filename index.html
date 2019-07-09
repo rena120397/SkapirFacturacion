@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href=" skapir.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Skapir</title>
+    <meta name="Description" content="Skapir, el mejor sitio de creación de páginas web y aplicaciones web, aumenta tu productividad y organiza tu empresa con productos de software hechos por emprededores para emprededores" />
+    <meta name="Author" content="Skapir">
+    <meta name="Subject" content="Skapir, el mejor sitio de creación de páginas web y aplicaciones web">
+    <meta name="Distribution" content="global" />
+    <meta name="Keywords" content="Skapir, paginas web, aplicaciones web, aplicaciones android, servicio tecnico, tiendas virtuales" />
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="skapir.png" alt="skapir" class="skap"><h3>Skapir</h3>  
+            </div>
+
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#"> <i class="fas fa-home"></i>  <span class="letramenu">Principal</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fas fa-desktop"></i> <span class="letramenu"> Escritorio </span></a>
+                </li>
+                <li>
+                    <a href="#controlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="far fa-edit"></i><span class="letramen">Control Stock</span></a>
+                    <ul class="collapse list-unstyled" id="controlSubmenu">
+                        <li>
+                            <a href="#"><span class="letram">Categorias</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="letram">Productos</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#ventasSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-box"></i> <span class="letramen">Ventas</span></a>
+                    <ul class="collapse list-unstyled" id="ventasSubmenu">
+                        <li>
+                            <a href="#"><span class="letram">Proveedor</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="letram">Ingresos</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#comprasSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-basket"></i> <span class="letramen">Compras</span> </a>
+                    <ul class="collapse list-unstyled" id="comprasSubmenu">
+                        <li>
+                            <a href="#"><span class="letram">Proveedor</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="letram">Ingresos</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#soporteSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-chart-bar"></i> <span class="letramen">Reportes </span></a>
+                    <ul class="collapse list-unstyled" id="soporteSubmenu">
+                        <li>
+                            <a href="#"><span class="letra">Consultar Ventas</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="letra">Consultar Compras</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-boxes"></i><span class="letramenu">Inventario</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-money-check-alt"></i><span class="letramen">Cobros y Pagos</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-wrench"></i><span class="letramen">Configuracion</span></a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download"><i class="fas fa-power-off"></i><span class="letrame">Cerrar Sesion</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <nav class="navbar">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fa fa-align-justify"></i> <span>Vista Completa</span>
+                </button>
+                <h1 class="">Productos</h1>
+                
+            </nav>
+            <div class="containerr">
+                <h1 class="text-center">Registro de Producto</h1>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Historial de Ventas</h4>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-sm table-hover">
+                                        <thead class="thead-light">
+                                            <tr class="text-center">
+                                                <th>Codigo</th>
+                                                <th>Producto</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                                <td>Dooley</td>
+                                                <td>Dooley</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                                <td>Dooley</td>
+                                                <td>Dooley</td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>july@example.com</td>
+                                                <td>Dooley</td>
+                                                <td>Dooley</td>
+                                            </tr>
+                                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <form class="" action="/action_page.php">
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Detalle del Producto:</legend>
+                            <div class="form-group">
+                                <label for="cod">Codigo Producto: </label>
+                                <input type="email" class="form-control" id="cod">
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre">Nombre: </label>
+                                <input type="password" class="form-control" id="nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="precio">Precio: </label>
+                                <input type="password" class="form-control" id="precio">
+                            </div>
+                            <div class="form-group">
+                                <label for="stock">Stock: </label>
+                                <input type="password" class="form-control" id="stock">
+                            </div>
+                            <div class="form-group">
+                                <label for="cant">Cantidad: </label>
+                                <input type="password" class="form-control" id="cant">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Ver Historial</button>
+                            </fieldset>
+                        </form>
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        
+                        <form class="" action="/action_page.php">
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Detalle del Venta:</legend>
+                                <div class="mostrar">S/. </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="serie">Serie: </label>
+                                            <input type="txt" class="form-control" id="serie" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="num"><span class="text-center">Numero de Venta:</span> </label>
+                                            <input type="txt" class="form-control" id="num" disabled>
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cliente"><span class="text-center">Nombre del cliente:</span> </label>
+                                    <input type="txt" class="form-control" id="cliente">
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="sel1"> Tipo de Documento:</label>
+                                            </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <select class="form-control" id="sel1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="sel2" class="mr-sm-2 ">Pago:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <select class="form-control" id="sel2">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="cant" class="mr-sm-2 "><span class="text-center">Cantidad:</span> </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="txt" class="form-control" id="cant">
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="sub" class="mr-sm-2 "><span class="text-center">Subtotal:</span> </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="txt" class="form-control" id="sub">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="igv" class="mr-sm-2 "><span class="text-center">I.G.V %:</span> </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="txt" class="form-control" id="igv">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="font-weight-bold">Total a pagar</p>
+                                <div class="most">S/. </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-white text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            Lorem ipsum dolor sit amet Lorem ipsum dolor siisum dolor sit ametLorem ipsum dolor sit amet
+                            Lorem ipsum dolor sit amet Lorem ipsum dolor siisum dolor sit ametLorem ipsum dolor sit amet
+                        </p>
+                        <form class="" action="/action_page.php">
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Detalle del Venta:</legend>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-warning l15"><i class="fas fa-save"></i> Grabar</button>
+                                    <button type="submit" class="btn btn-primary l15"><i class="fas fa-pen-alt"></i> Importe</button>
+                                    <button type="submit" class="btn btn-danger l15"><i class="fas fa-print"></i> Imprimir</button>
+                                </div>
+                                </fieldset>
+                                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <h6>@Copyright Skapir 2018 </h6>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });  
+    </script>
+
+
+
+
+
+</body>
+
+</html>
